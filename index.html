@@ -14,7 +14,8 @@
         <nav class="grid-container">
             <div class="logo">ANCESTRYKITCHEN</div>
             <div class="nav-links">
-                <a href="#beta">JOIN THE FAMILY BETA</a>
+                <a href="#demo">TRY THE SCANNER</a>
+                <a href="#beta" class="cta-nav">JOIN THE BETA</a>
             </div>
         </nav>
     </header>
@@ -37,9 +38,67 @@
             </div>
         </section>
 
+        <!-- Interactive Heirloom Scanner Section -->
+        <section id="demo" class="scanner-demo">
+            <div class="grid-container">
+                <div class="section-label">01 / INTERACTIVE DEMO</div>
+                <div class="content-block">
+                    <h2>THE HEIRLOOM SCANNER</h2>
+                    <p class="demo-intro">Experience how our Heritage AI preserves the "visual signature" of your family's handwriting. Upload a recipe card or try our sample below.</p>
+                </div>
+            </div>
+
+            <div class="demo-interface grid-container">
+                <div class="upload-zone" id="upload-zone">
+                    <input type="file" id="file-input" accept="image/*" class="hidden">
+                    <div class="upload-content" id="upload-placeholder">
+                        <div class="upload-icon">+</div>
+                        <p>CLICK TO UPLOAD A RECIPE CARD</p>
+                        <span class="small-note">OR DRAG AND DROP IMAGE HERE</span>
+                    </div>
+                    <img id="preview-img" src="images/overhead-shot-of-an-aged-stained-yellow.png" alt="Sample handwritten recipe card" class="preview-img">
+                    <div id="scanner-line" class="scanner-line hidden"></div>
+                </div>
+
+                <div class="result-zone" id="result-zone">
+                    <div class="result-placeholder" id="result-placeholder">
+                        <p>AWAITING SCAN...</p>
+                    </div>
+                    <div class="result-content hidden" id="result-content">
+                        <div class="result-header">
+                            <span class="tag">AI TRANSCRIPTION</span>
+                            <span class="accuracy">99.4% ACCURACY</span>
+                        </div>
+                        <div class="transcription-box">
+                            <h3 id="recipe-title">LEMON DRIZZLE CAKE</h3>
+                            <ul id="recipe-ingredients">
+                                <li>4 large eggs, at room temp</li>
+                                <li>225g unsalted butter, softened</li>
+                                <li>225g caster sugar</li>
+                                <li>225g self-raising flour</li>
+                                <li>Zest of 2 large lemons</li>
+                                <li>1 old jam jar of milk (approx 50ml)</li>
+                            </ul>
+                            <div class="heritage-note">
+                                <strong>SMART TRANSLATION:</strong> "One old jam jar" identified as approx 50ml based on 1950s regional context.
+                            </div>
+                        </div>
+                        <div class="result-actions">
+                            <a href="#beta" class="btn-secondary">SAVE TO MY VAULT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-container demo-controls">
+                <button id="scan-btn" class="btn-primary">SCAN HANDWRITING</button>
+                <button id="reset-btn" class="btn-link hidden">TRY ANOTHER</button>
+            </div>
+        </section>
+
         <section class="spotlight-section">
             <div class="grid-container">
-                <div class="section-label">NEW / AI HANDWRITING ENGINE</div>
+                <div class="section-label">TECHNOLOGY</div>
                 <div class="spotlight-content">
                     <h2>FROM STAINED PAPER TO DIGITAL PERMANENCE.</h2>
                     <p>Our proprietary 2026 AI Beta doesn't just "read" your recipes—it understands them. It preserves the shaky cursive of a 1950s index card while creating a searchable, scalable digital vault that will never fade, tear, or get lost.</p>
@@ -51,7 +110,7 @@
         </section>
 
         <section class="mission grid-container">
-            <div class="section-label">01 / THE MISSION</div>
+            <div class="section-label">02 / THE MISSION</div>
             <div class="content-block">
                 <h2>YOUR FAMILY TREE HAS A TASTE.</h2>
                 <p>A typed recipe is just instructions. A scan of the warped, stained card your mother used for 40 years is a piece of her soul. AncestryKitchen is the only vault designed to preserve both the instruction and the intimacy of the original handwriting.</p>
@@ -59,7 +118,7 @@
         </section>
 
         <section class="features grid-container">
-            <div class="section-label">02 / FEATURES</div>
+            <div class="section-label">03 / FEATURES</div>
             <div class="feature-grid">
                 <div class="feature-card">
                     <h3>VISUAL HANDWRITING METADATA</h3>
